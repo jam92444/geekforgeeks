@@ -1,0 +1,400 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Source Sans 3", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  background: rgb(2, 0, 36);
+}
+header {
+  width: 100%;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+
+header nav {
+  display: flex;
+}
+header .topnav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1f1f1f;
+  color: white;
+  border-bottom: 1px solid #373737;
+}
+
+/* top left */
+.topnav-left {
+  width: 100%;
+  padding-left: 15px;
+}
+.topnav-left ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+.topnav-left ul li {
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.topnav-left ul li a,
+.topnav-left ul li i {
+  font-size: 0.85rem;
+  transition: 0.1s linear;
+}
+.topnav-left ul li:hover i {
+  color: #2f8d45;
+  transform: rotateZ(180deg);
+}
+.topnav-left ul li:hover a {
+  color: #2f8d45;
+}
+
+/* top middle  */
+.topnav-middle {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding-left: 90px;
+}
+
+/* topnav right  */
+.topnav-right {
+  width: 100%;
+}
+.topnav-right ul {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.3rem;
+}
+.topnav-right ul li button {
+  padding: 10px;
+  width: 100px;
+  background-color: #283339;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  color: white;
+}
+.topnav-right ul li:hover {
+  color: #2f8d45;
+}
+.topnav-right ul li button:hover {
+  color: #2f8d45;
+}
+
+/* bottom navigation */
+.bottomNav {
+  background-color: #1f1f1f;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20px;
+}
+.bottomNav button {
+  color: white;
+  background-color: #1f1f1f;
+  padding: 0 20px;
+  border: 0;
+  z-index: 20;
+  box-shadow: 5px 0px 5px #1f1f1f;
+  /* position: fixed; */
+  position: relative;
+}
+.bottomNav button i {
+  font-size: 13px;
+}
+.bottomNav button i:hover {
+  color: #2f8d45;
+}
+.bottomNav .left-button {
+  left: -10px;
+}
+.bottomNav ul {
+  display: flex;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+  text-overflow: clip;
+  text-wrap: nowrap;
+  z-index: 10;
+  transition: 0.8s linear;
+}
+.bottomNav ul li a {
+  font-size: 14px;
+  /* z-index: 20; */
+  padding-right: 20px;
+  text-align: center;
+}
+.bottomNav ul li a:hover {
+  color: #2f8d45;
+}
+
+main {
+  width: 100%;
+  z-index: 2;
+  background-color: #0e0d12;
+}
+/* hero section  */
+
+main .hero {
+  width: 100%;
+  display: flex;
+  background-color: #171717;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+.hero .search-box {
+  /* width: 100%; */
+  width: 750px;
+  padding: 1.3rem 1.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #626466;
+  border-radius: 10px;
+}
+.hero .search-box input {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  width: 90%;
+  color: #626466;
+  font-size: 1.2rem;
+}
+.hero .search-box i {
+  width: 8%;
+  font-size: 1.8rem;
+  text-align: end;
+  color: #2f8d45;
+}
+.hero .some-content {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 1rem;
+}
+.hero .some-content button {
+  padding: 8px;
+  background-color: #494c51;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  color: white;
+}
+
+/* course section  */
+.course-section {
+  width: 100%;
+  padding: 10px 50px 10px 100px;
+}
+.course-section .title {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.course-section .title button {
+  padding: 10px 15px;
+  color: white;
+  border: 1px solid #626466;
+  border-radius: 25px;
+  background-color: transparent;
+}
+.course-section .title button:hover {
+  color: #2f8d45;
+  border-color: #2f8d45;
+}
+.course-cards {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 20px;
+}
+.course-cards .card {
+  width: 300px;
+  border-radius: 10px;
+  background-color: #232323;
+}
+
+.course-cards .card .top-thumbnail {
+  height: 200px;
+  width: 100%;
+  background-image: url(https://media.geeksforgeeks.org/img-practice/prod/courses/504/Mobile/Other/Course_DSA_to_Dev_1720846081.webp);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.card .top-thumbnail p{
+    /* width: 100%; */
+    width: 40px;
+    padding:5px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    background-color:#00000068 ;
+    font-size: 12px;
+    color: white;
+    left: 240px;
+}
+.card .top-thumbnail p i{
+    color: gold;
+    padding-right: 3px;
+
+}
+.course-cards .card .course-details {
+  margin-top: -20px;
+  line-height: 1.5;
+  padding: 10px 15px;
+}
+.course-cards .card .course-details h4{
+    color: white;
+    margin-bottom: 20px;
+ 
+}
+.course-cards .card .course-details h4{
+    color: white;
+    margin-bottom: 1.8rem;
+ 
+}
+.course-cards .card .course-details .beg{
+
+    color: #82949e;
+    font-size: 13px;
+}
+.course-cards .card .course-details .more-det{
+   
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+    height: 20px;
+ 
+}
+.course-cards .card .course-details .more-det p{
+    font-size: 13px;
+    
+}
+.course-cards .card .course-details .more-det p i{
+    color: #2f8d45;
+}
+.course-cards .card .course-details .more-det p span{
+    color: #82949e;
+}
+.course-cards .card .course-details .more-det button{
+    color:#2f8d45;
+    border: 0;
+    background-color: transparent;
+    font-weight: 700;
+    transition: .01s linear;
+}
+.course-details .of-btn{
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background-color: #f15721;
+    border: 0;
+    font-weight: 600;
+    color: white;
+}
+.Explore-section{
+  width: 80%;
+  padding: 10px 50px 10px 100px;
+  margin-top: 2rem;
+}
+.Explore-section h2{
+  color: white;
+  font-weight: 600;
+}
+.Explore-section .explore-banner{
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.explore-banner .exp-card{
+  width:45%;
+  height: 240px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.exp-card h2{
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.exp-card button{
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+/* .exp-card button:hover{
+  color: #4db59c;
+  background-color: white;
+} */
+
+@media screen and (max-width:554px) {
+  .Explore-section{
+    display: none;
+  }
+  
+}
+
+.bar-icon{
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+@media (max-width:780px){
+  .topnav-left{
+    display: none;
+  }
+  .bar-icon{
+    display: block;
+  }
+}

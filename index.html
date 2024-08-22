@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeeksforGeeks | A computer science portal for geeks</title>
+    <link
+      rel="shortcut icon"
+      href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body>
+    <header>
+      <nav class="topnav">
+        <div class="topnav-left">
+          <ul>
+            <li>
+              <a href="#">Courses </a><i class="fa-solid fa-angle-down"></i>
+            </li>
+            <li>
+              <a href="#">Tutorials</a> <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <li>
+              <a href="#">Jobs </a> <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <li>
+              <a href="#">Practice</a> <i class="fa-solid fa-angle-down"></i>
+            </li>
+            <li>
+              <a href="#">Contest</a> <i class="fa-solid fa-angle-down"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="bar-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="topnav-middle">
+          <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="" />
+        </div>
+        <div class="topnav-right">
+          <ul>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-regular fa-sun"></i></li>
+            <li><i class="fa-solid fa-bell"></i></li>
+            <li><i class="fa-solid fa-language"></i></li>
+            <li><button>Sign In</button></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="bottomNav">
+        <button onclick="slider_left()" class="left-button">
+          <i class="fa-solid fa-less-than"></i>
+        </button>
+        <ul id="slider_list">
+          <li><a href="#">Trending Now</a></li>
+          <li><a href="#">DSA</a></li>
+          <li><a href="#">WebTech </a></li>
+          <li><a href="#">Foundation Course</a></li>
+          <li><a href="#">Data Science</a></li>
+          <li><a href="#">Practice Problem</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">Machine Learning</a></li>
+          <li><a href="#">Javascript</a></li>
+          <li><a href="#">System Design</a></li>
+          <li><a href="#">Django</a></li>
+          <li><a href="#">DevOps Tutorials</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">C</a></li>
+          <li><a href="#">C++</a></li>
+          <li><a href="#">ReactJS</a></li>
+          <li><a href="#">NodeJS</a></li>
+          <li><a href="#">CP Live</a></li>
+          <li><a href="#">Aptitude</a></li>
+          <li><a href="#">Puzzles</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+        <button onclick="slider_right()">
+          <i class="fa-solid fa-greater-than"></i>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Hello, What Do You Want To Learn?</h1>
+        <div class="search-box">
+          <input type="text" name="" id="" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="some-content">
+          <button>Unlock 90% Refund</button>
+          <button>DSA: Basic To Advance Course</button>
+          <button>Full Stack Live Classes</button>
+        </div>
+      </section>
+
+      <div class="course-section">
+        <div class="title">
+          <h2>Courses</h2>
+          <button>View All</button>
+        </div>
+        <div class="course-cards">
+          <div class="card">
+            <div class="top-thumbnail">
+              <p><i class="fa-solid fa-star"></i><span>4.6</span></p>
+            </div>
+            <div class="course-details">
+              <h4>DSA to Development: A Complete Guide</h4>
+              <p class="beg">
+                <i class="fa-solid fa-globe"></i
+                ><span> Beginner to Advance</span>
+              </p>
+              <div class="more-det">
+                <p>
+                  <i class="fa-solid fa-arrow-up-wide-short"></i
+                  ><span> 336k+ interested Geeks </span>
+                </p>
+                <button class="Exp">Explore now</button>
+              </div>
+              <button class="of-btn"><i class="fa-solid fa-circle-info"></i><span> Get 90% Course Fee Refund!</span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-thumbnail">
+              <p><i class="fa-solid fa-star"></i><span>4.6</span></p>
+            </div>
+            <div class="course-details">
+              <h4>DSA to Development: A Complete Guide</h4>
+              <p class="beg">
+                <i class="fa-solid fa-globe"></i
+                ><span> Beginner to Advance</span>
+              </p>
+              <div class="more-det">
+                <p>
+                  <i class="fa-solid fa-arrow-up-wide-short"></i
+                  ><span> 336k+ interested Geeks </span>
+                </p>
+                <button class="Exp">Explore now</button>
+              </div>
+              <button class="of-btn"><i class="fa-solid fa-circle-info"></i><span> Get 90% Course Fee Refund!</span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-thumbnail">
+              <p><i class="fa-solid fa-star"></i><span>4.6</span></p>
+            </div>
+            <div class="course-details">
+              <h4>DSA to Development: A Complete Guide</h4>
+              <p class="beg">
+                <i class="fa-solid fa-globe"></i
+                ><span> Beginner to Advance</span>
+              </p>
+              <div class="more-det">
+                <p>
+                  <i class="fa-solid fa-arrow-up-wide-short"></i
+                  ><span> 336k+ interested Geeks </span>
+                </p>
+                <button class="Exp">Explore now</button>
+              </div>
+              <button class="of-btn"><i class="fa-solid fa-circle-info"></i><span> Get 90% Course Fee Refund!</span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-thumbnail">
+              <p><i class="fa-solid fa-star"></i><span>4.6</span></p>
+            </div>
+            <div class="course-details">
+              <h4>DSA to Development: A Complete Guide</h4>
+              <p class="beg">
+                <i class="fa-solid fa-globe"></i
+                ><span> Beginner to Advance</span>
+              </p>
+              <div class="more-det">
+                <p>
+                  <i class="fa-solid fa-arrow-up-wide-short"></i
+                  ><span> 336k+ interested Geeks </span>
+                </p>
+                <button class="Exp">Explore now</button>
+              </div>
+              <button class="of-btn"><i class="fa-solid fa-circle-info"></i><span> Get 90% Course Fee Refund!</span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-thumbnail">
+              <p><i class="fa-solid fa-star"></i><span>4.6</span></p>
+            </div>
+            <div class="course-details">
+              <h4>DSA to Development: A Complete Guide</h4>
+              <p class="beg">
+                <i class="fa-solid fa-globe"></i
+                ><span> Beginner to Advance</span>
+              </p>
+              <div class="more-det">
+                <p>
+                  <i class="fa-solid fa-arrow-up-wide-short"></i
+                  ><span> 336k+ interested Geeks </span>
+                </p>
+                <button class="Exp">Explore now</button>
+              </div>
+              <button class="of-btn"><i class="fa-solid fa-circle-info"></i><span> Get 90% Course Fee Refund!</span></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top-thumbnail">
+              <p><i class="fa-solid fa-star"></i><span>4.6</span></p>
+            </div>
+            <div class="course-details">
+              <h4>DSA to Development: A Complete Guide</h4>
+              <p class="beg">
+                <i class="fa-solid fa-globe"></i
+                ><span> Beginner to Advance</span>
+              </p>
+              <div class="more-det">
+                <p>
+                  <i class="fa-solid fa-arrow-up-wide-short"></i
+                  ><span> 336k+ interested Geeks </span>
+                </p>
+                <button class="Exp">Explore now</button>
+              </div>
+              <button class="of-btn"><i class="fa-solid fa-circle-info"></i><span> Get 90% Course Fee Refund!</span></button>
+            </div>
+          </div>
+   
+   
+        </div>
+
+      </div>
+
+
+      <div class="Explore-section">
+        <h2>Explore</h2>
+        <div class="explore-banner">
+          <div class="exp-card" style="background-color: #4db59c;">
+            <h2>Data Structure and Algorithms</h2>
+            <button class="exp_btn"><span>View more</span><i class="fa-solid fa-arrow-right"></i> </button>
+          </div>
+          <div class="exp-card" style="background-color: #4db59c;">
+            <h2>Data Structure and Algorithms</h2>
+            <button class="exp_btn"><span>View more</span><i class="fa-solid fa-arrow-right"></i> </button>
+          </div>
+          <div class="exp-card" style="background-color: #4db59c;">
+            <h2>Data Structure and Algorithms</h2>
+            <button class="exp_btn"><span>View more</span><i class="fa-solid fa-arrow-right"></i> </button>
+          </div>
+          <div class="exp-card" style="background-color: #4db59c;">
+            <h2>Data Structure and Algorithms</h2>
+            <button class="exp_btn"><span>View more</span><i class="fa-solid fa-arrow-right"></i> </button>
+          </div>
+          <div class="exp-card" style="background-color: #4db59c;">
+            <h2>Data Structure and Algorithms</h2>
+            <button class="exp_btn"><span>View more</span><i class="fa-solid fa-arrow-right"></i> </button>
+          </div>
+          <div class="exp-card" style="background-color: #4db59c;">
+            <h2>Data Structure and Algorithms</h2>
+            <button class="exp_btn"><span>View more</span><i class="fa-solid fa-arrow-right"></i> </button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </body>
+</html>
